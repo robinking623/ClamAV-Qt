@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=ClamAV-GUI
+Name[de]=ClamAV-GUI
+GenericName=ClamAV-GUI
+GenericName[de]=ClamAV-GUI
+Comment=Graphical Interface for ClamAV
+Comment[de]=Graphische Oberfläche für CLamAV
+Exec=clamav-gui
+Icon=clamav-gui
+Type=Application
+Terminal=false
+X-KDE-StartupNotify=true
+Categories=Qt;KDE;System;Security;
