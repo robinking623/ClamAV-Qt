@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>optionsDialog</class>
+ <widget class="QWidget" name="optionsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>746</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0">
+    <widget class="QLabel" name="versionLabel">
+     <property name="text">
+      <string>ClamAV Version : </string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0" rowspan="6">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>Available Options</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QListWidget" name="availableOptionsList">
+           <property name="sortingEnabled">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>--algorithmic-detection=no</string>
+            </property>
+            <property name="toolTip">
+             <string>deactivate algorithmic detection</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--allmatch=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Continue scanning within file after finding a match</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--archive-verbose</string>
+            </property>
+            <property name="toolTip">
+             <string>Show filenames inside scanned archives</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--bell</string>
+            </property>
+            <property name="toolTip">
+             <string>Sound bell on virus detection</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--block-encrypted=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Block encrypted archives</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--bytecode-statistics=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Collect and print bytecode statistics</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--bytecode-unsigned=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Load unsigned bytecode</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--bytecode=no</string>
+            </property>
+            <property name="toolTip">
+             <string>Don't load bytecode from the database</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--cross-fs=no</string>
+            </property>
+            <property name="toolTip">
+             <string>Do not scan files and directories on other filesystems</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--debug</string>
+            </property>
+            <property name="toolTip">
+             <string>Enable libclamav's debug messages</string>
+            </property>
+            <property name="background">
+             <brush brushstyle="NoBrush">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--detect-broken=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Try to detect broken executable files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--detect-pua=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Detect Possibly Unwanted Applications</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--detect-structured=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Detect structured data (SSN, Credit Card)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--disable-pe-stats</string>
+            </property>
+            <property name="toolTip">
+             <string>Disable submission of individual PE sections in stats submissions</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--dumpcerts</string>
+            </property>
+            <property name="toolTip">
+             <string>Dump authenticode certificate chain in PE files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--enable-stats</string>
+            </property>
+            <property name="toolTip">
+             <string>Enable statistical reporting of malware</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--heuristic-scan-precedence=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Stop scanning as soon as a heuristic match is found</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--infected</string>
+            </property>
+            <property name="toolTip">
+             <string>Only print infected files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--leave-temps=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Do not remove temporary files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--no-summary</string>
+            </property>
+            <property name="toolTip">
+             <string>Disable summary at end of scanning</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--nocerts</string>
+            </property>
+            <property name="toolTip">
+             <string>Disable authenticode certificate chain verification in PE files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--official-db-only=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Only load official signatures</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--partition-intersection=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Detect partition intersections in raw disk images using heuristics.</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--phishing-cloak=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Always block cloaked URLs (phishing module)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--phishing-scan-urls=no</string>
+            </property>
+            <property name="toolTip">
+             <string>deactivate URL-based phishing detection</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--phishing-sigs=no</string>
+            </property>
+            <property name="toolTip">
+             <string>Deactivate signature-based phishing detection</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--phishing-ssl=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Always block SSL mismatches in URLs (phishing module)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--quiet</string>
+            </property>
+            <property name="toolTip">
+             <string>Only output error messages</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--remove=yes</string>
+            </property>
+            <property name="toolTip">
+             <string>Remove infected files. Be careful!</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--scan-archive=no</string>
+            </property>
+            <property name="toolTip">
+             <string>Don't Scan archive files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--scan-elf=no</string>
+            </property>
+            <property name="toolTip">
+             <string>don't scan ELF files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--scan-html=no</string>
+            </property>
+            <property name="toolTip">
+             <string>don't scan HTML files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--scan-mail=no</string>
+            </property>
+            <property name="toolTip">
+             <string>don't scan mail files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--scan-ole2=no</string>
+            </property>
+            <property name="toolTip">
+             <string>don't scan OLE2 containers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--scan-pdf=no</string>
+            </property>
+            <property name="toolTip">
+             <string>don't scan PDF files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--scan-pe=no</string>
+            </property>
+            <property name="toolTip">
+             <string>don't scan PE files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--scan-swf=no</string>
+            </property>
+            <property name="toolTip">
+             <string>don't scan SWF files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--stdout</string>
+            </property>
+            <property name="toolTip">
+             <string>Write to stdout instead of stderr</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--suppress-ok-results</string>
+            </property>
+            <property name="toolTip">
+             <string>Skip printing OK files</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>--verbose</string>
+            </property>
+            <property name="toolTip">
+             <string>Be verbose</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>118</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QPushButton" name="removeButton">
+        <property name="text">
+         <string>&lt;------</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" rowspan="6">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>Selected Options</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QListWidget" name="selectedOptionsList">
+           <property name="sortingEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QPushButton" name="addButton">
+        <property name="text">
+         <string>-----&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>118</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>22</width>
+       <height>22</height>
+      </size>
+     </property>
+     <widget class="QWidget" name="pathTab">
+      <attribute name="icon">
+       <iconset resource="../resources.qrc">
+        <normaloff>:/icons/icons/directories.png</normaloff>:/icons/icons/directories.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Tab 1</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>690</width>
+            <height>270</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="loadVirusDatabaseCheckBox">
+             <property name="text">
+              <string>Load all supported db files from DIR</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" colspan="2">
+            <widget class="QLineEdit" name="loadVirusDatabaseLineEdit">
+             <property name="styleSheet">
+              <string notr="true">background:white;</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="selectLVDButton">
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:lightgrey;</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="scanReportToFileCheckBox">
+             <property name="text">
+              <string>Save scan report to FILE</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="scanReportToFileLineEdit">
+             <property name="styleSheet">
+              <string notr="true">background:white;</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="viewButton">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../resources.qrc">
+               <normaloff>:/icons/icons/magnifierglass.png</normaloff>:/icons/icons/magnifierglass.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>22</width>
+               <height>22</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QPushButton" name="selectSCRFButton">
+             <property name="styleSheet">
+              <string notr="true">background:lightgrey;</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="scanFilesFromFileCheckBox">
+             <property name="text">
+              <string>Scan files from file</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1" colspan="2">
+            <widget class="QLineEdit" name="scanFilesFromFileLineEdit"/>
+           </item>
+           <item row="2" column="3">
+            <widget class="QPushButton" name="selectSFFButton">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QCheckBox" name="tempFileCheckBox">
+             <property name="text">
+              <string>Create temporary files in DIRECTORY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1" colspan="2">
+            <widget class="QLineEdit" name="tempFilesLineEdit">
+             <property name="styleSheet">
+              <string notr="true">background:white;</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QPushButton" name="selectTFButton">
+             <property name="styleSheet">
+              <string notr="true">background:lightgrey;</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QCheckBox" name="moveDirectoryCheckBox">
+             <property name="text">
+              <string>Move infected files into DIRECTORY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1" colspan="2">
+            <widget class="QLineEdit" name="moveDirectoryLineEdit">
+             <property name="styleSheet">
+              <string notr="true">background:white;</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3">
+            <widget class="QPushButton" name="selectMDButton">
+             <property name="styleSheet">
+              <string notr="true">background:lightgrey;</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QCheckBox" name="copyDirectoryCheckBox">
+             <property name="text">
+              <string>Copy infected files into DIRECTORY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1" colspan="2">
+            <widget class="QLineEdit" name="copyDirectoryLineEdit">
+             <property name="styleSheet">
+              <string notr="true">background:white;</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="QPushButton" name="selectCFButton">
+             <property name="styleSheet">
+              <string notr="true">background:lightgrey;</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QCheckBox" name="followDirectorySymlinksCheckBox">
+             <property name="text">
+              <string>Follow directory symlinks</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QComboBox" name="followDirectorySymlinksComboBox">
+             <item>
+              <property name="text">
+               <string>never</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>direct</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>always</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QCheckBox" name="followFileSymlinksCheckBox">
+             <property name="text">
+              <string>Follow file symlinks</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QComboBox" name="followFileSymlinksComboBox">
+             <item>
+              <property name="text">
+               <string>never</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>direct</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>always</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>addButton</sender>
+   <signal>clicked()</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_addButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>removeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_removeButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>availableOptionsList</sender>
+   <signal>itemDoubleClicked(QListWidgetItem*)</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_addButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>54</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectedOptionsList</sender>
+   <signal>itemDoubleClicked(QListWidgetItem*)</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_removeButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>665</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>696</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectSCRFButton</sender>
+   <signal>clicked()</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_selectSRTFButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>701</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>743</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectSFFButton</sender>
+   <signal>clicked()</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_selectSFFButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>701</x>
+     <y>406</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>743</x>
+     <y>396</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectTFButton</sender>
+   <signal>clicked()</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_selectTDButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>701</x>
+     <y>438</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>743</x>
+     <y>432</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectMDButton</sender>
+   <signal>clicked()</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_selectMDButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>701</x>
+     <y>470</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>741</x>
+     <y>462</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectCFButton</sender>
+   <signal>clicked()</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_selectCDButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>701</x>
+     <y>502</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>742</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>viewButton</sender>
+   <signal>clicked()</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_logViewerButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>603</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>741</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectLVDButton</sender>
+   <signal>clicked()</signal>
+   <receiver>optionsDialog</receiver>
+   <slot>slot_selectLVDButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>652</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>742</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_addButtonClicked()</slot>
+  <slot>slot_removeButtonClicked()</slot>
+  <slot>slot_selectLVDButtonClicked()</slot>
+  <slot>slot_selectSRTFButtonClicked()</slot>
+  <slot>slot_selectTDButtonClicked()</slot>
+  <slot>slot_selectMDButtonClicked()</slot>
+  <slot>slot_selectCDButtonClicked()</slot>
+  <slot>writeDirectories()</slot>
+  <slot>slot_selectSFFButtonClicked()</slot>
+  <slot>slot_logViewerButtonClicked()</slot>
+ </slots>
+</ui>

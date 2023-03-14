@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>includeExcludeOptions</class>
+ <widget class="QWidget" name="includeExcludeOptions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>669</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>635</width>
+        <height>480</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="dontScanFileNameCheckBox">
+         <property name="text">
+          <string>Don't scan file names matching REGEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="dontScanFileNameLineEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="dontScanDirCheckBox">
+         <property name="text">
+          <string>Don't scan directories matching REGEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="dontScanDirLineEdit"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="onlyScanFileNameCheckBox">
+         <property name="text">
+          <string>Only scan file names matching REGEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="onlyScanFileNameLineEdit"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="onlyScanDirCheckBox">
+         <property name="text">
+          <string>Only scan directories matching REGEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="onlyScanDirLineEdit"/>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::Panel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="enablePUACheckBox">
+            <property name="text">
+             <string>Use Signatures for Potentially Unwanted Applications</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QFrame" name="PUAFrame">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0">
+              <widget class="QRadioButton" name="skipPUAPackedRadioButton">
+               <property name="text">
+                <string>Skip PUA sigs of category Packed</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QRadioButton" name="loadPUAPackedRadioButon">
+               <property name="text">
+                <string>Load PUA sigs of category Packed</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QRadioButton" name="skipPUAPWToolRadioButton">
+               <property name="text">
+                <string>Skip PUA sigs of category PWTool</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QRadioButton" name="loadPUAPWToolRadioButton">
+               <property name="text">
+                <string>Load PUA sigs of category PWTool</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QRadioButton" name="skipPUANetToolRadioButton">
+               <property name="text">
+                <string>Skip PUA sigs of category NetTool</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QRadioButton" name="loadPUANetToolRadioButton">
+               <property name="text">
+                <string>Load PUA sigs of category NetTool</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QRadioButton" name="skipPUAP2PRadioButton">
+               <property name="text">
+                <string>Skip PUA sigs of category P2P</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QRadioButton" name="loadPUAP2PRadioButton">
+               <property name="text">
+                <string>Load PUA sigs of category P2P</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QRadioButton" name="skipPUAIRCRadioButton">
+               <property name="text">
+                <string>Skip PUA sigs of category IRC</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QRadioButton" name="loadPUAIRCRadioButton">
+               <property name="text">
+                <string>Load PUA sigs of category IRC</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QRadioButton" name="skipPUARATRadioButton">
+               <property name="text">
+                <string>Skip PUA sigs of category RAT</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QRadioButton" name="loadPUARATRadioButton">
+               <property name="text">
+                <string>Load PUA sigs of category RAT</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QRadioButton" name="skipPUANetToolSpyRadioButton">
+               <property name="text">
+                <string>Skip PUA sigs of category NetToolSpy</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QRadioButton" name="loadPUANetToolSpyRadioButton">
+               <property name="text">
+                <string>Load PUA sigs of category NetToolSpy</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QRadioButton" name="skipPUAServerRadioButton">
+               <property name="text">
+                <string>Skip PUA sigs of category Server</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QRadioButton" name="loadPUAServerRadioButton">
+               <property name="text">
+                <string>Load PUA sigs of category Server</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
+              <widget class="QRadioButton" name="skipPUAScriptRadioButton">
+               <property name="text">
+                <string>Skip PUA sigs of category Script</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="1">
+              <widget class="QRadioButton" name="loadPUAScriptRadioButton">
+               <property name="text">
+                <string>Load PUA sigs of category Script</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>enablePUACheckBox</sender>
+   <signal>clicked()</signal>
+   <receiver>includeExcludeOptions</receiver>
+   <slot>slot_enablePUACheckBoxClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>33</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>166</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_enablePUACheckBoxClicked()</slot>
+  <slot>slot_writeSettings()</slot>
+ </slots>
+</ui>

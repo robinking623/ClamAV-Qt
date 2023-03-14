@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>freshclamsetter</class>
+ <widget class="QWidget" name="freshclamsetter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>681</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_6">
+   <item row="0" column="1" colspan="2">
+    <widget class="QGroupBox" name="deamonSettingsGroupBox">
+     <property name="title">
+      <string>Deamon Settings</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="enableStatsCheckBox">
+        <property name="text">
+         <string>Enable Stats</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="checkForUpdatesLabel">
+        <property name="text">
+         <string>Check for Updates </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QSpinBox" name="updatesPerDaySpinBox">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>50</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="timesPerDayLabel">
+        <property name="text">
+         <string>times per day</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="4">
+       <widget class="QPushButton" name="startStopDeamonButton">
+        <property name="styleSheet">
+         <string notr="true">background:red</string>
+        </property>
+        <property name="text">
+         <string>Deamon not running - start deamon</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resources.qrc">
+          <normaloff>:/icons/icons/freshclam.png</normaloff>:/icons/icons/freshclam.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>22</width>
+          <height>22</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+S, Ctrl+W</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLineEdit" name="statsIDLineEdit">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLabel" name="withStatsLabel">
+        <property name="text">
+         <string>with stats id</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QGroupBox" name="deamonGroupBox">
+     <property name="title">
+      <string>Deamon Log-Messages</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QPlainTextEdit" name="deamonLogText">
+        <property name="lineWrapMode">
+         <enum>QPlainTextEdit::NoWrap</enum>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="deamonClearLogButton">
+        <property name="text">
+         <string>Clear Log</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resources.qrc">
+          <normaloff>:/icons/icons/trash-can.png</normaloff>:/icons/icons/trash-can.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>22</width>
+          <height>22</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+S, Ctrl+W</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="2">
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="updateSettingsGroupBox">
+       <property name="title">
+        <string>Update Settings</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="1" colspan="2">
+         <widget class="QComboBox" name="dataBaseComboBox">
+          <item>
+           <property name="text">
+            <string>All</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>main</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>daily</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bytecode</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="selectDataBaseDirectoryButton">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="dataBaseDirectoryLineEdit">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="dataBaseDirectoryLabel">
+          <property name="text">
+           <string>Database Directory</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="updateDateBaseLabel">
+          <property name="text">
+           <string>Update Database</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <widget class="QPushButton" name="updateNowButton">
+          <property name="styleSheet">
+           <string notr="true">background:green</string>
+          </property>
+          <property name="text">
+           <string>Update now!</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/icons/icons/start.png</normaloff>:/icons/icons/start.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QGroupBox" name="logMessageGroupBox">
+       <property name="title">
+        <string>Freshclam Log-Messages</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QPlainTextEdit" name="logPlainText">
+          <property name="lineWrapMode">
+           <enum>QPlainTextEdit::NoWrap</enum>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="clearLogButton">
+          <property name="text">
+           <string>Clear Log</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/icons/icons/trash-can.png</normaloff>:/icons/icons/trash-can.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#aa3</string>
+     </property>
+     <property name="title">
+      <string>Update Info</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="0">
+       <widget class="QTextEdit" name="updateInfoText">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>selectDataBaseDirectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>freshclamsetter</receiver>
+   <slot>slot_selectDataBaseDirectoryButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>567</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dataBaseComboBox</sender>
+   <signal>activated(int)</signal>
+   <receiver>freshclamsetter</receiver>
+   <slot>slot_dataBaseComboBoxActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>640</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>updateNowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>freshclamsetter</receiver>
+   <slot>slot_updateNowButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>313</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>150</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startStopDeamonButton</sender>
+   <signal>clicked()</signal>
+   <receiver>freshclamsetter</receiver>
+   <slot>slot_startStopDeamonButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>386</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>updatesPerDaySpinBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>freshclamsetter</receiver>
+   <slot>slot_updatesPerDaySpinBoxActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>530</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>176</x>
+     <y>4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>statsIDLineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>freshclamsetter</receiver>
+   <slot>slot_statsIdLineEditActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>622</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>5</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>enableStatsCheckBox</sender>
+   <signal>clicked()</signal>
+   <receiver>freshclamsetter</receiver>
+   <slot>slot_enableStatsCheckBoxActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>471</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>329</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearLogButton</sender>
+   <signal>clicked()</signal>
+   <receiver>freshclamsetter</receiver>
+   <slot>slot_clearLogButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>332</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deamonClearLogButton</sender>
+   <signal>clicked()</signal>
+   <receiver>freshclamsetter</receiver>
+   <slot>slot_clearDeamonLogButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>636</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>676</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_selectDataBaseDirectoryButtonClicked()</slot>
+  <slot>slot_startStopDeamonButtonClicked()</slot>
+  <slot>slot_updateNowButtonClicked()</slot>
+  <slot>slot_updatesPerDaySpinBoxActivated()</slot>
+  <slot>slot_enableStatsCheckBoxActivated()</slot>
+  <slot>slot_dataBaseComboBoxActivated()</slot>
+  <slot>slot_statsIdLineEditActivated()</slot>
+  <slot>slot_clearLogButtonClicked()</slot>
+  <slot>slot_updateFileWatcherTriggered()</slot>
+  <slot>slot_clearDeamonLogButtonClicked()</slot>
+ </slots>
+</ui>

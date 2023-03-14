@@ -1,0 +1,30 @@
+Cloned project from https://store.kde.org/p/1127892/
+Following are from the original author. I just try to improve it with cmake support and Qt6
+
+- Thank you for downloading ClamAV-GUI.
+
+- I hope you will find this application useful and it will help you to
+  keep your machine free of viruses.
+- Viruses and scanning for viruses is a topic of neglect using Linux. But
+nevertheless it is still important
+- With ClamAV-GUI you got a tool that make the everyday work easier and
+  helps you with keeping your machine free of viruses.
+
+Requirements:
+- You must have clamav and freshclam installed
+
+Provides:
+- A graphical Interface to work with clamav and freshclam.
+- A service menu for Konqueror/Dolphin so you can scan files
+  direct from your file browser.
+
+Installation:
+- Just do a 'qmake', 'make' and finally a 'make install' as root.
+  If you use OpenSuSE please have a look at the openSuSE build service.
+  There are rpm packages available
+
+Questions / Suggestions:
+- ....are welcome. Just report any problems or suggestions to
+  Joerg Zopes <joerg.zopes@gmx.de>
+
+Have fun and a virus free machine.

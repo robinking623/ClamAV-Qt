@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/Clam.png</file>
+        <file>icons/start.png</file>
+        <file>icons/stop.png</file>
+        <file>icons/options.png</file>
+        <file>icons/basefolder.png</file>
+        <file>icons/homefolder.png</file>
+        <file>icons/media.png</file>
+        <file>icons/freshclam.png</file>
+        <file>icons/logo.png</file>
+        <file>icons/scheduler.png</file>
+        <file>icons/trash-can.png</file>
+        <file>icons/scheduleAddButton.png</file>
+        <file>icons/weekly.png</file>
+        <file>icons/monthly.png</file>
+        <file>icons/daily.png</file>
+        <file>icons/application-exit.png</file>
+        <file>icons/showhide.png</file>
+        <file>icons/directories.png</file>
+        <file>icons/includeexclude.png</file>
+        <file>icons/scanlimits.png</file>
+        <file>icons/information.png</file>
+        <file>icons/clear_all.png</file>
+        <file>icons/editclear.png</file>
+        <file>icons/startlogo.png</file>
+        <file>icons/gifs/intersection_22.GIF</file>
+        <file>icons/gifs/spinning.gif</file>
+        <file>icons/gifs/spinning_segments.GIF</file>
+        <file>extra/icon32/clamav-gui.png</file>
+        <file>icons/add_profile.png</file>
+        <file>icons/delete_profile.png</file>
+        <file>icons/edit_profile.png</file>
+        <file>icons/profilemanager.png</file>
+        <file>icons/wizard.png</file>
+        <file>icons/cancel.png</file>
+        <file>icons/create.png</file>
+        <file>icons/back.png</file>
+        <file>icons/next.png</file>
+        <file>icons/magnifierglass.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,78 @@
+Thu Dez 10 2015 Version 0.4.1
+---------------------------------------------------------------------------------------------------------------
+- Spanish translation provided by Pedro Alamo <palamodz@gmail.com>. ClamAV-GUI now speaks spanish as well
+  Thank you Pedro.
+
+Sun Nov 29 2015 Version 0.4.1
+---------------------------------------------------------------------------------------------------------------
+- A danish translation was provided by Martin Eilsoe <martin.eilsoe@gmail.com>. Though ClamAV-GUI can 'speak'
+  danish now :-) Thank you Martin.
+
+Sat Sep 19 2015 Version 0.4.0
+---------------------------------------------------------------------------------------------------------------
+- Handling for profiles remodeled. Profiles are now handeled through a profile manager tab. New profiles and 
+  existing profiles are created / modified through a profile wizard.
+
+---------------------------------------------------------------------------------------------------------------
+Tue Aug 17 2015 Version 0.3.3
+
+- Changed the startup behaviour for the initial startup. If signatures are found in the default clamav folder
+  (/var/lib/clamav) this folder is uses as default signature folder. If no virus signatures are found than
+  the new created folder at ~/.clamav-gui/signatures is used.
+
+----------------------------------------------------------------------------------------------------------------
+Mon Aug 17 2015 Version 0.3.2
+
+- Icon size missmatch fixed. The dropzone was not available due to a wrong icon-size (fixed
+
+----------------------------------------------------------------------------------------------------------------
+Mon Aug 17 2015 Version 0.3.1
+
+- Fixed a minor bug in the scheduler section
+
+----------------------------------------------------------------------------------------------------------------
+Sun Aug 16 2015 Version 0.3.0
+
+- Changes made to the freshclam "update now" behaviour. The window is now more verbose. Sometimes the update
+  took a while and it seems the process stalled. Now the download percentage for the three files is displayed
+  so you got a kind of progress indicator.
+
+- Fixed a bug in the profile handling.
+
+----------------------------------------------------------------------------------------------------------------
+Fri Aug 14 2015 Version 0.2.3
+
+- Changed the behaviour for changing existing profiles. A profile used by the scheduler can now be changed but
+  still not erased. A warning is issued but can be overruled.
+
+----------------------------------------------------------------------------------------------------------------
+Wed Aug 12 2015 Version 0.2.3
+
+- Fixed some path issues
+
+----------------------------------------------------------------------------------------------------------------
+Tue Aug 11 2015 Version 0.2.3 - joerg.zopes@gmx.de
+
+- Clean up of the Makefile. No install.sh script needed - just do make; make install to install the application
+
+----------------------------------------------------------------------------------------------------------------
+Thu Aug 6 2015 Version 0.2.3 - joerg.zopes@gmx.de
+
+- Added some visual effects to show that the app is busy (Update, Scanner ...)
+
+----------------------------------------------------------------------------------------------------------------
+Sun Aug 2 2015 Version 0.2.1. - joerg.zopes@gmx.de
+
+- Added a search function for the Log-Files (search/continue/jump to infected files/jump to errors)
+- Added a Service Menu for Konqueror / Dolphin
+
+----------------------------------------------------------------------------------------------------------------
+Wed Jul 29 2015 Version 0.1.2. - joerg.zopes@gmx.de
+
+- fixed a bug at startup to prefent the application being startet multiple times
+- fixed some issues regarding logging of freshclam
+
+----------------------------------------------------------------------------------------------------------------
+Tue Jul 28 2015 Version 0.1.0. - joerg.zopes@gmx.de
+
+- initial package build
